@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "915427970168",
+    "firebase_url": "https://arkiosk-31310-default-rtdb.firebaseio.com",
+    "project_id": "arkiosk-31310",
+    "storage_bucket": "arkiosk-31310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915427970168:android:e4a3a357c2aa366ba3b18d",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.ARKiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915427970168-v42e8r85l6ltc5uth2rmm0onkmfloa4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.DefaultCompany.ARKiosk",
+            "certificate_hash": "f412d1e5db599257dc3c439e1c4c8ecfb3295778"
+          }
+        },
+        {
+          "client_id": "915427970168-ogtmm010mi383msmh1vulnpj2adf4rfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3wCtr8BsmkANyWZDdUlQArowLbv_Gcbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915427970168-ogtmm010mi383msmh1vulnpj2adf4rfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
