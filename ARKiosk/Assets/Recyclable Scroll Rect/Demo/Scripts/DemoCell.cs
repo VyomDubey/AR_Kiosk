@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using PolyAndCode.UI;
+using UnityEngine.SceneManagement;
 
 //Cell class for demo. A cell in Recyclable Scroll Rect must have a cell class inheriting from ICell.
 //The class is required to configure the cell(updating UI elements etc) according to the data during recycling of cells.
@@ -37,6 +38,8 @@ public class DemoCell : MonoBehaviour, ICell
     
     private void ButtonListener()
     {
+        PlayerPrefs.SetInt("Character", _cellIndex);
+        SceneManager.LoadScene("StudentScene");
         Debug.Log("Index : " + _cellIndex +  ", Name : " + _contactInfo.Name  + ", Gender : " + _contactInfo.Gender);
     }
 }

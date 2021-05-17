@@ -26,14 +26,19 @@ public class RecyclableScrollerDemo : MonoBehaviour, IRecyclableScrollRectDataSo
 
     //Dummy data List
     private List<ContactInfo> _contactList = new List<ContactInfo>();
-
+    private string SearchItem;
+    GameObject UpdateListReference;
     //Recyclable scroll rect's data source must be assigned in Awake.
     private void Awake()
     {
         InitData();
+    //    GetInputValue("N");
         _recyclableScrollRect.DataSource = this;
     }
-
+    private void Start()
+    {
+        UpdateListReference = GameObject.Find("Plane");
+    }
     //Initialising _contactList with dummy data 
     private void InitData()
     {
@@ -71,5 +76,39 @@ public class RecyclableScrollerDemo : MonoBehaviour, IRecyclableScrollRectDataSo
         item.ConfigureCell(_contactList[index], index);
     }
 
+    public void GetInputValue(string input)
+    {
+        SearchItem = input;
+        List<ContactInfo> Temp = new List<ContactInfo>();
+        if (input.Length > 0)
+        {
+            for (int j = 0; j < _contactList.Count; j++)
+            {
+                int i = 0;
+                while (_contactList[j].Name[i] == input[i])
+                {
+                    i++;
+                    if (i == input.Length)
+                    {
+                        Temp.Add(_contactList[j]);
+                        break;
+                    }
+                }
+            }
+            _contactList.Clear();
+            for (int i = 0; i < Temp.Count; i++)
+            {
+                _contactList.Add(Temp[i]);
+
+            }
+            Temp.Clear();
+        }
+        else
+        {
+            InitData();
+        }
+    //    UpdateListReference.GetComponent<UpdateList>().updateList();
+        
+    }
     #endregion
 }
