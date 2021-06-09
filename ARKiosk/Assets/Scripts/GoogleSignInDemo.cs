@@ -161,7 +161,7 @@ public class GoogleSignInDemo : MonoBehaviour
                         if(s=="Student")
                         {
                             // Student Scene
-                            AddToInformation("Welcome Student");
+                            AddToInformation("Welcome Student " + dictUser["UserName"]);
                         }
                         else if(s=="Teacher")
                         {

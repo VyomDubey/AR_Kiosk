@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "915427970168-nh40bnmu15aknjf0pcg9ksmuqfuh5e2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.DefaultCompany.ARKiosk",
+            "certificate_hash": "de90ef87d5daeaeb1ec7c0e8ecfbf0100a7dbd65"
+          }
+        },
+        {
           "client_id": "915427970168-v42e8r85l6ltc5uth2rmm0onkmfloa4o.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -12,6 +12,7 @@ public class CharacterManager : MonoBehaviour
     {
         //Getting the AR Object at selected Index 
         var temp = PlayerPrefs.GetInt("Character");
+        Debug.Log("Index= " + temp);
         CurrentCharacter=Instantiate(characters[temp], new Vector3(0, 0, -7), Quaternion.identity);
         CurrentCharacter.rotation = Quaternion.Euler(0, 180, 0);
     }
